@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodapp/common/sizedbox.dart';
-import 'package:foodapp/config/theme/colors.dart';
+
 import 'package:foodapp/screens/home/component/buttoncomponent.dart';
 import 'package:foodapp/screens/home/component/home_drawercomponent.dart';
 import 'package:foodapp/screens/home/component/item_cardcomponent.dart';
 import 'package:foodapp/screens/home/component/slidercomponetn.dart';
+import 'package:foodapp/screens/search/search.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -35,7 +37,9 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           IconButton(
             icon: const Image(image: AssetImage('assets/image/search.png')),
-            onPressed: () {},
+            onPressed: () {
+              Get.to(SearchScreen());
+            },
           ),
         ],
       ),
@@ -67,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ).withOpacity(0.4)),
               ),
               SpaceH40(),
-              SliderHome(),
+              Slide(),
               const SpaceH28(),
               ItemCard(),
               SpaceH32(),

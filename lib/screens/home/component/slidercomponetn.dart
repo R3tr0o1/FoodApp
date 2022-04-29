@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Slider extends StatelessWidget {
-  const Slider({
+class Slide extends StatelessWidget {
+  const Slide({
     Key? key,
   }) : super(key: key);
 

@@ -193,7 +193,7 @@ class ItemCard extends StatelessWidget {
                       child: Container(
                         height: 120.h,
                         width: 120.w,
-                        child: Image.asset('assets/image/food1.png'),
+                        child: Image.asset('assets/image/Ricebowl.png'),
                       ),
                     ),
                     const SpaceH8(),
@@ -261,14 +261,14 @@ class ItemCard extends StatelessWidget {
                       child: Container(
                         height: 120.h,
                         width: 120.w,
-                        child: Image.asset('assets/image/burger.png'),
+                        child: Image.asset('assets/image/pizza.png'),
                       ),
                     ),
                     const SpaceH8(),
                     Padding(
                       padding: EdgeInsets.only(left: 11.w),
                       child: Text(
-                        'Beef Burger',
+                        'Pizza',
                         style: TextStyle(
                             color: Color(0xff454745).withOpacity(0.71),
                             fontSize: 12.sp,
