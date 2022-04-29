@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RegisterTextfield extends StatelessWidget {
+  final double? height;
   final Function()? onTap;
   final TextEditingController controller;
   final String hintText;
@@ -12,13 +13,14 @@ class RegisterTextfield extends StatelessWidget {
       required this.controller,
       required this.hintText,
       required this.image,
-      this.imagesuffix})
+      this.imagesuffix,
+      this.height})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 70,
+      height: height,
       width: 300,
       child: TextField(
         onTap: onTap ?? () {},

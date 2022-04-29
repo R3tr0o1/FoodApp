@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:foodapp/screens/garbage.dart';
+import 'package:foodapp/screens/login/login.dart';
+
 import 'package:foodapp/screens/startscreen/start.dart';
 import 'package:get/get.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       designSize: const Size(439, 885),
       builder: (_) {
         return const GetMaterialApp(
-          home: StartScreen(),
+          home: LoginScreen(),
         );
       },
     );

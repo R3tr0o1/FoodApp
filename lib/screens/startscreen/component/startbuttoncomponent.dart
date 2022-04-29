@@ -55,11 +55,14 @@ class _StartButtonState extends State<StartButton> {
                       fontWeight: FontWeight.w600),
                 ),
                 style: ElevatedButton.styleFrom(
-                    primary: Ksecondarybutton,
-                    shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(15),
-                            bottomRight: Radius.circular(15)))),
+                  primary: Ksecondarybutton,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(15),
+                      bottomRight: Radius.circular(15),
+                    ),
+                  ),
+                ),
               ),
             ),
           ],

@@ -15,38 +15,52 @@ class _RegisterSucessfulState extends State<RegisterSucessful> {
     return Scaffold(
       backgroundColor: Kprimarygreen,
       body: Container(
-        color: Colors.white,
-        child: Column(children: [
-          Image.asset('assets/image/girl.png'),
-          SizedBox(
-            height: 45.06,
-          ),
-          Text(
-            'Registration',
-          ),
-          Text('Complete'),
-          SizedBox(
-            height: 58,
-          ),
-          SizedBox(
-            height: 60.h,
-            width: 320.w,
-            child: ElevatedButton(
-              onPressed: () {},
-              child: const Text(
-                'Continue ',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w600),
-              ),
-              style: ElevatedButton.styleFrom(
-                  primary: Color(0xffDFB497),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30))),
+        width: MediaQuery.of(context).size.width,
+        color: Kprimarygreen,
+        child: Padding(
+          padding: const EdgeInsets.only(top: 80),
+          child: Column(children: [
+            Image.asset('assets/image/girl.png'),
+            SizedBox(
+              height: 45.06,
             ),
-          ),
-        ]),
+            Text(
+              'Registration',
+              style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xff464444)),
+            ),
+            Text(
+              'Complete',
+              style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xff464444)),
+            ),
+            SizedBox(
+              height: 58,
+            ),
+            SizedBox(
+              height: 60.h,
+              width: 320.w,
+              child: ElevatedButton(
+                onPressed: () {},
+                child: const Text(
+                  'Continue ',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 23,
+                      fontWeight: FontWeight.w400),
+                ),
+                style: ElevatedButton.styleFrom(
+                    primary: Color(0xffDFB497),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30))),
+              ),
+            ),
+          ]),
+        ),
       ),
     );
   }
