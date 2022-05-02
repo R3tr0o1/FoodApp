@@ -16,55 +16,59 @@ class _RegisterSucessfulState extends State<RegisterSucessful> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Kprimarygreen,
-      body: Container(
-        width: MediaQuery.of(context).size.width,
-        color: Kprimarygreen,
-        child: Padding(
-          padding: const EdgeInsets.only(top: 80),
-          child: Column(children: [
-            Image.asset('assets/image/girl.png'),
-            SizedBox(
-              height: 45.06,
-            ),
-            Text(
-              'Registration',
-              style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.w700,
-                  color: Color(0xff464444)),
-            ),
-            Text(
-              'Complete',
-              style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.w700,
-                  color: Color(0xff464444)),
-            ),
-            SizedBox(
-              height: 58,
-            ),
-            SizedBox(
-              height: 60.h,
-              width: 320.w,
-              child: ElevatedButton(
-                onPressed: () {
-                  Get.to(HomeScreen());
-                },
-                child: const Text(
-                  'Continue ',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 23,
-                      fontWeight: FontWeight.w400),
+      body: ListView(
+        children: [
+          Container(
+            width: MediaQuery.of(context).size.width,
+            color: Kprimarygreen,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 80),
+              child: Column(children: [
+                Image.asset('assets/image/girl.png'),
+                SizedBox(
+                  height: 45.06,
                 ),
-                style: ElevatedButton.styleFrom(
-                    primary: Color(0xffDFB497),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30))),
-              ),
+                Text(
+                  'Registration',
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w700,
+                      color: Color(0xff464444)),
+                ),
+                Text(
+                  'Complete',
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w700,
+                      color: Color(0xff464444)),
+                ),
+                SizedBox(
+                  height: 58,
+                ),
+                SizedBox(
+                  height: 60.h,
+                  width: 320.w,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Get.to(HomeScreen());
+                    },
+                    child: const Text(
+                      'Continue ',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 23,
+                          fontWeight: FontWeight.w400),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                        primary: Color(0xffDFB497),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30))),
+                  ),
+                ),
+              ]),
             ),
-          ]),
-        ),
+          ),
+        ],
       ),
     );
   }

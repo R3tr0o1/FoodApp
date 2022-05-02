@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:foodapp/screens/login/login.dart';
 import 'package:foodapp/screens/register/register.dart';
 import 'package:get/get.dart';
 
@@ -24,7 +25,9 @@ class _StartButtonState extends State<StartButton> {
               height: 65.h,
               width: 150.w,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(LoginScreen());
+                },
                 child: Text(
                   'Sign in',
                   style:

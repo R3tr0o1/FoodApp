@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodapp/common/registertextfield.dart';
@@ -5,6 +6,7 @@ import 'package:foodapp/common/sizedbox.dart';
 import 'package:foodapp/config/theme/colors.dart';
 import 'package:foodapp/screens/home/home.dart';
 import 'package:get/get.dart';
+import 'package:get/get_connect/http/src/utils/utils.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -15,6 +17,8 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   TextEditingController username_emailcontroller = TextEditingController();
+  TextEditingController passwordcontroller = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,15 +69,13 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             const SpaceH24(),
             RegisterTextfield(
-                height: 59,
                 controller: username_emailcontroller,
                 hintText: 'Username , Email ',
                 image: Image.asset('assets/image/profile.png')),
             SpaceH8(),
             RegisterTextfield(
               imagesuffix: Image.asset('assets/image/eye.png'),
-              height: 59,
-              controller: username_emailcontroller,
+              controller: passwordcontroller,
               hintText: 'Password ',
               image: Image.asset('assets/image/lock.png'),
             ),

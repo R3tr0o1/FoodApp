@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodapp/common/sizedbox.dart';
 import 'package:foodapp/screens/home/home.dart';
+import 'package:foodapp/screens/startscreen/component/startbuttoncomponent.dart';
+import 'package:foodapp/screens/startscreen/start.dart';
 import 'package:get/get.dart';
 
 class homeDrawer extends StatelessWidget {
@@ -140,18 +142,23 @@ class homeDrawer extends StatelessWidget {
                       ],
                     ),
                     SpaceH113(),
-                    Row(
-                      children: [
-                        Image.asset('assets/image/door.png'),
-                        SpaceW16(),
-                        Text(
-                          'Logout',
-                          style: TextStyle(
-                              fontSize: 16.sp,
-                              fontWeight: FontWeight.w500,
-                              color: Color(0xff7C7C7A)),
-                        ),
-                      ],
+                    GestureDetector(
+                      onTap: (() {
+                        Get.offAll(StartScreen());
+                      }),
+                      child: Row(
+                        children: [
+                          Image.asset('assets/image/door.png'),
+                          SpaceW16(),
+                          Text(
+                            'Logout',
+                            style: TextStyle(
+                                fontSize: 16.sp,
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xff7C7C7A)),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
