@@ -36,9 +36,7 @@ class _SignInScreenState extends State<RegisterScreen> {
                 hintText: 'Email',
                 image: Image.asset('assets/image/email.png'),
               ),
-              SizedBox(
-                height: 22,
-              ),
+              SpaceH24(),
               RegisterTextfield(
                   controller: usernamecontroller,
                   hintText: 'UserName',
@@ -52,9 +50,7 @@ class _SignInScreenState extends State<RegisterScreen> {
                 image: Image.asset('assets/image/lock.png'),
                 imagesuffix: Image.asset('assets/image/eye.png'),
               ),
-              SizedBox(
-                height: 39,
-              ),
+              SpaceH36(),
               SizedBox(
                 height: 60.h,
                 width: 320.w,

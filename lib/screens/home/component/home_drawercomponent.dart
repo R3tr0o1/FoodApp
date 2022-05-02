@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodapp/common/sizedbox.dart';
+import 'package:foodapp/screens/home/home.dart';
+import 'package:get/get.dart';
 
 class homeDrawer extends StatelessWidget {
   const homeDrawer({
@@ -49,18 +51,23 @@ class homeDrawer extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      children: [
-                        Image.asset('assets/image/home.png'),
-                        SpaceW16(),
-                        Text(
-                          'Home',
-                          style: TextStyle(
-                              fontSize: 16.sp,
-                              fontWeight: FontWeight.w500,
-                              color: Color(0xff7C7C7A)),
-                        ),
-                      ],
+                    GestureDetector(
+                      onTap: (() {
+                        Get.offAll(HomeScreen());
+                      }),
+                      child: Row(
+                        children: [
+                          Image.asset('assets/image/home.png'),
+                          SpaceW16(),
+                          Text(
+                            'Home',
+                            style: TextStyle(
+                                fontSize: 16.sp,
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xff7C7C7A)),
+                          ),
+                        ],
+                      ),
                     ),
                     SpaceH44(),
                     Row(
