@@ -63,12 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Text(
                 'Choose your preferred meal',
-                style: TextStyle(
-                    fontSize: 13.sp,
-                    fontWeight: FontWeight.w600,
-                    color: const Color(
-                      0xff454745,
-                    ).withOpacity(0.4)),
+                style: Theme.of(context).textTheme.headline3,
               ),
               SpaceH40(),
               Slide(),

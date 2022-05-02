@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodapp/config/theme/colors.dart';
+import 'package:foodapp/screens/home/home.dart';
+import 'package:get/get.dart';
 
 class RegisterSucessful extends StatefulWidget {
   const RegisterSucessful({Key? key}) : super(key: key);
@@ -45,7 +47,9 @@ class _RegisterSucessfulState extends State<RegisterSucessful> {
               height: 60.h,
               width: 320.w,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(HomeScreen());
+                },
                 child: const Text(
                   'Continue ',
                   style: TextStyle(

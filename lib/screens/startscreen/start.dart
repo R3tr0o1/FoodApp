@@ -22,21 +22,14 @@ class _SigninRegisterState extends State<StartScreen> {
         children: [
           const StartHeading(),
           Column(
-            children: const [
+            children: [
               Text(
                 'Foodienator',
-                style: TextStyle(
-                    height: 1.05,
-                    color: Colors.white,
-                    fontSize: 33,
-                    fontWeight: FontWeight.w800),
+                style: Theme.of(context).textTheme.headline1,
               ),
               Text(
                 "Order your favorite Meals \n Here!",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w300),
+                style: Theme.of(context).textTheme.headline2,
               ),
             ],
           ),
